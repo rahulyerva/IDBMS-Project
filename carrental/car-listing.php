@@ -46,10 +46,6 @@ error_reporting(0);
 </head>
 <body>
 
-<!-- Start Switcher -->
-<?php include('includes/colorswitcher.php');?>
-<!-- /Switcher -->  
-
 <!--Header--> 
 <?php include('includes/header.php');?>
 <!-- /Header --> 
@@ -74,7 +70,7 @@ error_reporting(0);
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
-$cnt=1;
+$count=1;
 if($query->rowCount() > 0)
 {
 foreach($results as $result)
@@ -114,8 +110,6 @@ foreach($results as $result)
 
 <!--/Register-Form --> 
 
-<!--Forgot-password-Form -->
-<?php include('includes/forgotpassword.php');?>
 
 <!-- Scripts --> 
 <script src="assets/js/jquery.min.js"></script>

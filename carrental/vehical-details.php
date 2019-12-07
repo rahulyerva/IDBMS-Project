@@ -29,7 +29,7 @@ echo "<script>alert('Booking successfull.');</script>";
 }
 else 
 {
-echo "<script>alert('Something went wrong. Please try again');</script>";
+echo "<script>alert('Please try again');</script>";
 }
 
 }
@@ -77,9 +77,7 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
 </head>
 <body>
 
-<!-- Start Switcher -->
-<?php include('includes/colorswitcher.php');?>
-<!-- /Switcher -->  
+
 
 <!--Header-->
 <?php include('includes/header.php');?>
@@ -231,8 +229,7 @@ $_SESSION['brndid']=$result->bid;
 
 <!--/Register-Form --> 
 
-<!--Forgot-password-Form -->
-<?php include('includes/forgotpassword.php');?>
+
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script> 
